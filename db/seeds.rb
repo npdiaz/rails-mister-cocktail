@@ -7,6 +7,6 @@ results['drinks'].each do |ingredient|
   Ingredient.new(name: ingredient["strIngredient1"]).save
 end
 
-Cocktail.create(name: "Sex on the beach", image_url: "https://unsplash.com/photos/fXkmfjaowOw")
-Cocktail.create(name: "Mojito", image_url:"https://unsplash.com/photos/pb7oJwtNVU4")
-Cocktail.create(name: "White Russian", image_url:"https://unsplash.com/photos/btOgwJQvu28")
+Cocktail.create(name: "Sex on the beach")
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "White Russian")
