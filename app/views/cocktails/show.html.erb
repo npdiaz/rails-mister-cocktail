@@ -1,0 +1,20 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <%= image_tag "logo.png", alt: "cocktails", width: 200 %>
+
+  <div class="navbar-wagon-right">
+    <div class= "navbar-wagon-item navbar-wagon-link"><%= link_to "All cocktails", cocktails_path %> </div>
+    <div class= "navbar-wagon-item navbar-wagon-link"><%= link_to "Add a cocktail", new_cocktail_path %> </div>
+  </div>
+</div>
+
+<div>
+  <h3><%= @cocktail.name %></h3>
+  <% @ingredients.each do |ingredient| %>
+    <ul>
+      <li><%= ingredient.name %></li>
+      <li><%= ingredient.name %></li>
+      <li><%= ingredient.name %></li>
+    </ul>
+  <% end %>
+</div>
